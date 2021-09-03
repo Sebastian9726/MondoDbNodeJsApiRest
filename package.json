@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-restapi-2019",
+  "version": "1.0.0",
+  "description": "En este repositorio se almacena el código escrito en [tutorial para crear una REST API usando Nodejs, Mongodb](https://www.youtube.com/watch?v=OtYoK0RV7oY&list=PLtGPr3LoS9SbftwyFA84MMoUBq5wCJORt&index=2&t=145s) y sintaxis moderna de Javascript usando Ecmascript 10 o Ecmascript 2019.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "express": "^4.17.1",
+    "mongodb": "^3.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.4",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "nodemon": "^1.19.0"
+  }
+}
