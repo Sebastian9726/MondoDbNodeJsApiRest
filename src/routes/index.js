@@ -1,8 +1,11 @@
 import { Router } from 'express'
+
+
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send('Welcome to my API');
+router.get('/', async(req, res) => {
+         res.json("Servidor funcionando");
+    
 });
 
 export default router;
