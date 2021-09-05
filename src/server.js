@@ -9,9 +9,11 @@ import IndexRoutes from './routes/index'
 import TaskRoutes from './routes/tasks'
 import TaskDonations from './routes/donationsRoutes'
 
+require('dotenv').config({path:'./.env'})
 
+const puerto = process.env.PORT
 // settings
-app.set('port', process.env.PORT || 2500);
+app.set('port', puerto || 3000);
 
 // Middlewares
 app.use(urlencoded({ extended: false }));
