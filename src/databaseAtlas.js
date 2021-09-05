@@ -6,7 +6,7 @@ var uri = "mongodb://Sebastian:test@cluster0-shard-00-00.lte4s.mongodb.net:27017
       
 export async function connectDBA() {
     try {
-        const client = await MongoClient.connect(uri)
+        const client = await MongoClient.connect((uri), { useUnifiedTopology: true })
         const db = client.db('NodeyMongo');
          return db;
         
